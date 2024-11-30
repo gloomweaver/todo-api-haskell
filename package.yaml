@@ -21,10 +21,13 @@ description:         Please see the README on GitHub at <https://github.com/gith
 
 dependencies:
 - base >= 4.7 && < 5
+# api layer
 - servant
 - servant-server
 - warp
-- aeson
+# other
+- persistent # for database interaction
+- aeson # for JSON encoding/decoding
 
 ghc-options:
 - -Wall

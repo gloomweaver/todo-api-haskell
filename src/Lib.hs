@@ -9,7 +9,11 @@ where
 import Data.IORef (newIORef)
 import Network.Wai.Handler.Warp (run)
 import Servant
-import Todo (TodoController, Todos, todoController)
+import Todo
+  ( TodoController,
+    Todos,
+    todoController,
+  )
 
 type API = "hello" :> Get '[PlainText] String :<|> TodoController
 
